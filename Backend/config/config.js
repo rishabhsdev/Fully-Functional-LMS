@@ -1,26 +1,26 @@
 // sendgrid key
-exports.Sendgrid=process.env.SENDGRID_KEY;
+exports.Sendgrid="dskdsjdsd";
 
 // mongo database
-exports.mongo = process.env.MONGO_DATABASE;
+exports.mongo = "mongodb+srv://userpr22:u3pxNdWUNSrO8v0H@userscluster.1v4gidn.mongodb.net/?retryWrites=true&w=majority";
 
 
 // jwt authentication 
-exports.accessToken=process.env.ACCESS_TOKEN_SECRET;
-exports.refereshToken=process.env.REFRESH_TOKEN_SECRET;
+exports.accessToken="somesecret";
+exports.refereshToken="somesecret";
 
-exports.accessTokenLife=process.env.ACCESS_TOKEN_LIFE;
-exports.refereshTokenLife=process.env.REFRESH_TOKEN_LIFE;
+exports.accessTokenLife=100000;
+exports.refereshTokenLife=1000000;
 
 
 //Redis
-exports.redisHost = process.env.REDIS_HOST;
-exports.redisPassword=process.env.REDIS_PASSWORD;
-exports.redisPort=process.env.REDIS_PORT
+exports.redisHost = "fdfsafsafsf";
+exports.redisPassword="ffafasfsaf";
+exports.redisPort="8000"
 
 // google auth
-exports.googleAuth = process.env.OAuth2Client;
+exports.googleAuth = "sdsfdgg";
 
 //stripe payment
-exports.stripePayment = process.env.STRIPE_SECRET_TOKEN;
+exports.stripePayment = "sk_test_51OEZ0gSI6FP2xiQeV4J3UZis3CKEmlFujocXkWScS5GhB9kqCMm28ORyZXokMjR0LS8J5gYlx03E9QHtZLB9way700ZvSUeX3F";
 
