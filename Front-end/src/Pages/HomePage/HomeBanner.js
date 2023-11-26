@@ -14,7 +14,7 @@ class HomepageBanner extends Component{
              Banner=( <div className="BannerSection">
 
              <img className="BannerImage" 
-             src={Url +"/images"+ this.props.img +".png"} alt="banner1"/>
+             src={Url +"images/"+ this.props.img +".png"} alt="banner1"/>
 
             </div>);
             }
@@ -23,7 +23,7 @@ class HomepageBanner extends Component{
             Banner=( <div className="BannerSection">
 
                      <img className="BannerImage" 
-                     src={Url +"/images"+ this.props.img +".png"} alt="banner1"/>
+                     src={Url +"images/"+ this.props.img +".png"} alt="banner1"/>
 
                     </div>);
         }
