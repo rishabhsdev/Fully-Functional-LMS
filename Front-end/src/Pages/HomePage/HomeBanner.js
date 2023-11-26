@@ -14,16 +14,16 @@ class HomepageBanner extends Component{
              Banner=( <div className="BannerSection">
 
              <img className="BannerImage" 
-             src={Url + this.props.img +".jpg"} alt="banner1"/>
+             src={Url +"/images"+ this.props.img +".png"} alt="banner1"/>
 
             </div>);
             }
 
-        if(this.props.img){
+        if(this.props.img !== 'all'){
             Banner=( <div className="BannerSection">
 
                      <img className="BannerImage" 
-                     src={Url + this.props.img +".png"} alt="banner1"/>
+                     src={Url +"/images"+ this.props.img +".png"} alt="banner1"/>
 
                     </div>);
         }
