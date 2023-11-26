@@ -1,3 +1,3 @@
 
-const Url ="http://localhost:8080/"
+const Url ="https://orca-app-2f2mu.ondigitalocean.app/backend"
 export default Url;
