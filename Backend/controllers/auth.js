@@ -499,11 +499,17 @@ exports.isPurchased = (req, res, next) => {
 
     // Check if the user has purchased the course
     console.log(userId);
-    console.log(user.courses);
-    const isPurchased = user.courses.includes(courseId);
-    console.log("ispurchased:", isPurchased);
+    if (user) {
+      console.log(user.courses);
+      const isPurchased = user.courses.includes(courseId);
+      console.log("ispurchased:", isPurchased);
+      res.json({ isPurchased });
+    }
+    // console.log(user.courses);
+    // const isPurchased = user.courses.includes(courseId);
+    // console.log("ispurchased:", isPurchased);
 
     // Send the result back to the client
-    res.json({ isPurchased });
+    // res.json({ isPurchased });
   });
 };
