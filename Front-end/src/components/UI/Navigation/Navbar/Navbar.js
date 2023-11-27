@@ -3,7 +3,6 @@ import './Navbar.css';
 import {NavLink,useHistory} from 'react-router-dom';
 import Logo from '../../../UI/Logo/Logo';
 import AuthServices from '../../../../ApiServices/auth.service';
-import { GoogleLogout } from 'react-google-login';
 import Search from '../../Search/search';
 
 
@@ -63,18 +62,6 @@ const Navbar = ()=>{
         <i data-toggle="tooltip" data-placement="top" title="Bookmarked Courses"
          className="fa fa-book" aria-hidden="true"><span id="bookmarkNav"> Bookmark</span></i></NavLink>
        
-      </li>
-
-      <li className="nav-item">
-          <GoogleLogout
-            clientId={process.env.REACT_APP_GOOGLE_API_KEY}
-            buttonText="Logout"
-            render={renderProps => (
-              <NavLink to="/login" onClick={logout} 
-              disabled={renderProps.disabled}  className="nav-link logoutlink" > Logout </NavLink>
-              )}
-            onLogoutSuccess={logout}>
-          </GoogleLogout>
       </li>
     </ul>
     ); 
