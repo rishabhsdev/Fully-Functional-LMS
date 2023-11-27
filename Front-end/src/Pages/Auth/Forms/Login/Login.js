@@ -7,7 +7,6 @@ import Input from '../../../../components/UI/Input/FormInput';
 import SpinnerButton from '../../../../components/UI/Spinners/SpinnerButton';
 import MainPage from '../../../../components/UI/MainPage/MainPage';
 import Google_logo from '../../../../components/UI/Logo/google';
-import GoogleLogin from 'react-google-login';
 import SumbitButton from '../../../../components/UI/Buttons/SumbitButton';
 import Alert from '../alert';
 
@@ -287,21 +286,6 @@ render() {
 
     let form = (
       <div className="login-form">
-      
-          <GoogleLogin
-            clientId={process.env.REACT_APP_GOOGLE_API_KEY}
-            render={renderProps => (
-            <button onClick={renderProps.onClick} 
-                    disabled={renderProps.disabled} 
-                    className="google-btn"> <Google_logo/>  Continue using google</button>
-            
-            )}
-            buttonText="Login"
-            onSuccess={this.responseGoogle}
-            onFailure={this.FailResponseGoogle}
-            cookiePolicy={'single_host_origin'}/>
-
-          <p className="devider-or">OR</p>
         <form onSubmit={this.formHandler} >
         
             {
