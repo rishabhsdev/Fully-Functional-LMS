@@ -3,7 +3,7 @@ exports.Sendgrid = "dskdsjdsd";
 
 // mongo database
 exports.mongo =
-  "mongodb+srv://userpr22:PWoH0L3bsiEXmgBK.1v4gidn.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://userpr22:PWoH0L3bsiEXmgBK@userscluster.1v4gidn.mongodb.net/?retryWrites=true&w=majority";
 
 // jwt authentication
 exports.accessToken = "somesecret";
