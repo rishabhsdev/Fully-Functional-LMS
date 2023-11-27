@@ -53,7 +53,7 @@ const Navbar = ()=>{
        title="Create Your Course">
         
         <NavLink to="/teacherhome" activeClassName="teacherActive"
-         className="nav-link teachLink">Teach on Shelp</NavLink>
+         className="nav-link teachLink">Teach on Scholar</NavLink>
       </li>
     
      
